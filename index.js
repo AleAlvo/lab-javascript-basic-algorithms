@@ -14,3 +14,28 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+let nameWithSpace = "";
+
+for (let i = 0; i < hacker1.length; i++) {
+    nameWithSpace += hacker1[i] + " ";
+}
+
+console.log(nameWithSpace.toUpperCase());
+
+let nameBackwards = "";
+
+for (let i = hacker2.length - 1; i >= 0; i--) {
+    nameBackwards += hacker2[i];
+}
+
+console.log(nameBackwards);
+
+if (nameWithSpace.localeCompare(nameBackwards) < 0) {
+    console.log("The driver's name goes first.");
+} else if (nameWithSpace.localeCompare(nameBackwards) > 0) {
+    console.log("Yo, the navigator's name goes first definitely");
+} else if (nameWithSpace.localeCompare(nameBackwards) === 0) {
+    console.log("What?! You both have the same name?");
+} else {
+    console.log("error");
+}
