@@ -52,3 +52,66 @@ let etCount = longText.split("et");
 console.log(etCount.length - 1);
 
 //Bonus 2
+let phraseToCheck = "This is just a phrase";
+
+let phraseReversed = "";
+
+for (let i = phraseToCheck.length - 1; i >=0; i--){
+    if (phraseToCheck[i] === " ") {
+        continue;
+    } else {
+        phraseReversed += phraseToCheck[i];
+    }
+};
+
+//console.log(phraseReversed);
+
+let phraseToCheckNoSpace ="";
+
+for (i = 0; i < phraseToCheck.length; i++) {
+    if (phraseToCheck[i] === " ") {
+        continue;
+    } else {
+        phraseToCheckNoSpace += phraseToCheck[i];
+    }
+};
+
+//console.log(phraseToCheckNoSpace);
+
+if (phraseToCheckNoSpace === phraseReversed) {
+    console.log("This phrase is a palindrome.")
+} else {
+    console.log("This phrase is not a palindrome.")
+}
+
+
+/* phraseToCheck = "race car";
+phraseReversed = "";
+
+for (let i = phraseToCheck.length - 1; i >=0; i--){
+    if (phraseToCheck[i] === " ") {
+        continue;
+    } else {
+        phraseReversed += phraseToCheck[i];
+    }
+};
+
+console.log(phraseReversed);
+
+phraseToCheckNoSpace ="";
+
+for (i = 0; i < phraseToCheck.length; i++) {
+    if (phraseToCheck[i] === " ") {
+        continue;
+    } else {
+        phraseToCheckNoSpace += phraseToCheck[i];
+    }
+};
+
+console.log(phraseToCheckNoSpace);
+
+if (phraseToCheckNoSpace === phraseReversed) {
+    console.log("This phrase is a palindrome.")
+} else {
+    console.log("This phrase is not a palindrome.")
+} */
